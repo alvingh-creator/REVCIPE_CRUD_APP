@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-// Routes
+// Routes   
 app.use('/api/recipes', recipeRoutes);
 
 // Health check route
