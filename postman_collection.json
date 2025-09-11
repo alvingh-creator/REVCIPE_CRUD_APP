@@ -1,0 +1,66 @@
+
+---
+
+### 2️⃣ Postman Collection (`postman_collection.json`)
+
+Here’s a **ready-to-use template** (replace `<YOUR_APP_URL>` with your Render URL or `http://localhost:5000` for local testing):
+
+```json
+{
+  "info": {
+    "name": "Recipes API",
+    "_postman_id": "abcd-1234-efgh-5678",
+    "description": "CRUD APIs for Recipes App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Recipes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "<YOUR_APP_URL>/api/recipes"
+      }
+    },
+    {
+      "name": "Get Recipe by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "<YOUR_APP_URL>/api/recipes/:id"
+      }
+    },
+    {
+      "name": "Create Recipe",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Sample Recipe\",\n  \"ingredients\": \"ingredient1, ingredient2\",\n  \"instructions\": \"Step 1, Step 2\",\n  \"time\": 15\n}"
+        },
+        "url": "<YOUR_APP_URL>/api/recipes"
+      }
+    },
+    {
+      "name": "Update Recipe",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Recipe\",\n  \"ingredients\": \"ingredient1, ingredient2\",\n  \"instructions\": \"Updated steps\",\n  \"time\": 20\n}"
+        },
+        "url": "<YOUR_APP_URL>/api/recipes/:id"
+      }
+    },
+    {
+      "name": "Delete Recipe",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "<YOUR_APP_URL>/api/recipes/:id"
+      }
+    }
+  ]
+}
