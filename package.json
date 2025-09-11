@@ -1,19 +1,19 @@
 {
-  "name": "recipe-crud-app",
+  "name": "recipes-app",
   "version": "1.0.0",
-  "description": "Complete CRUD application for managing recipes",
-  "main": "app.js",
+  "description": "Simple Recipes CRUD app (Node, Express, Mongoose) with Tailwind frontend",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "build": "vite build"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.5.0",
-    "dotenv": "^16.3.1",
     "cors": "^2.8.5",
-    "express-validator": "^7.0.1"
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
