@@ -25,3 +25,8 @@ A simple **CRUD application** for managing recipes, built with **Node.js, Expres
    ```bash
    git clone <your-repo-url>
    cd recipes-app
+## Setup
+1. Copy `.env.example` to `.env`
+2. Add your own MongoDB URI in `.env`
+3. Run `npm install`
+4. Run `npm run dev`
